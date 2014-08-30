@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Sandro Scalco" />
+  <title>derfotograph.ch | Sandro Scalco Fotografie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/jquery.multiscroll.css" />
+  <link rel="stylesheet" type="text/css" href="css/examples.css" />
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+<!-- This following line is needed in case of using the default easing option or when using another
+ one rather than "linear" or "swing". You can also add the full jQuery UI instead of this file if you prefer -->
+  <script src="js/jquery.easings.min.js" type="text/javascript" ></script>   
+  <script src="js/jquery.multiscroll.min.js" type="text/javascript" ></script>
+  
+
+	<script type="text/javascript">
+	 $(document).ready(function() {
+            $('#myContainer').multiscroll({
+            	sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
+            	anchors: ['first', 'second', 'third'],
+            	menu: '#menu',
+            	navigation: true,
+            	navigationTooltips: ['One', 'Two', 'Three'],
+            	loopBottom: false,
+            	loopTop: false
+            });
+        });
+    </script>
+</head>
+<body data-spy="scroll" data-target=".navbar">
+<ul id="menu">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#first">derfotograph.ch</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li data-menuanchor="first" class="active"> <a href="#first">Section 1</a></li>
+            <li data-menuanchor="second">       <a href="#second">Section 2</a></li>
+            <li data-menuanchor="third">        <a href="#third">Section 3</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+</ul>
+
+<div id="myContainer">
+	<div class="ms-left">
+		<div class="ms-section" id="left1">
+			<div class="fullscreen">
+				<div class="container">
+			    	<div class="jumbotron" id="startButton">
+			        	<h1>Hallo.</h1>
+			        	<p class="lead">
+			        	Ich zeige hier einige Bilder, ich wünsche dir viel Spass dabei. Wenn du fragen hast, oder mehr erfahren möchtest, dann kannst du mich gerne kontaktieren. In der Rubrik "Über" findest du ein paar Informationen über mich. Klicke einfach auf Start um dich von meinen Bildern begeistern zu lassen!..
+			       		</p>
+		        		<p align="center"><a class="btn btn-lg btn-success" href="#second" role="button">Start!</a></p>
+			      	</div>
+			    </div>
+			</div>
+		</div>
+
+
+		<div class="ms-section" id="left2">
+			<h1>Left 2 </h1>
+		</div>
+
+		<div class="ms-section" id="left3">
+			<h1>Left 3</h1>
+		</div>
+	</div>
+	
+	<div class="ms-right">
+		<div class="ms-section" id="right1">
+		
+		</div>
+
+		<div class="ms-section" id="right2">
+			
+			
+		</div>
+
+		<div class="ms-section" id="right3">
+			
+		</div>
+	</div>	
+</div>
+
+</body>
+</html>
