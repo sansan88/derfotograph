@@ -8,8 +8,7 @@
 
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="css/jquery.multiscroll.css" />
-  <link rel="stylesheet" type="text/css" href="css/examples.css" />
-  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -24,10 +23,10 @@
 	 $(document).ready(function() {
             $('#myContainer').multiscroll({
             	sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
-            	anchors: ['first', 'second', 'third'],
+            	anchors: ['first', 'second', 'third', 'fourth', 'fifth'],
             	menu: '#menu',
             	navigation: true,
-            	navigationTooltips: ['One', 'Two', 'Three'],
+            	navigationTooltips: ['Start', 'Musik', 'Natur', 'Abstrakt', 'Portrait'],
             	loopBottom: false,
             	loopTop: false
             });
@@ -49,9 +48,11 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li data-menuanchor="first" class="active"> <a href="#first">Section 1</a></li>
-            <li data-menuanchor="second">       <a href="#second">Section 2</a></li>
-            <li data-menuanchor="third">        <a href="#third">Section 3</a></li>
+            <!--<li data-menuanchor="first" class="active"> <a href="#first">Section 1</a></li>-->
+            <li data-menuanchor="second">       <a href="#second">Musik</a></li>
+            <li data-menuanchor="third">        <a href="#third">Natur</a></li>
+            <li data-menuanchor="fourth">       <a href="#fourth">Abstrakt</a></li>
+            <li data-menuanchor="fifth">        <a href="#fifth">Portrait</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -66,7 +67,7 @@
 			    	<div class="jumbotron" id="startButton">
 			        	<h1>Hallo.</h1>
 			        	<p class="lead">
-			        	Ich zeige hier einige Bilder, ich wünsche dir viel Spass dabei. Wenn du fragen hast, oder mehr erfahren möchtest, dann kannst du mich gerne kontaktieren. In der Rubrik "Über" findest du ein paar Informationen über mich. Klicke einfach auf Start um dich von meinen Bildern begeistern zu lassen!..
+			        		Klicke dich durch mein Portfolie durch..
 			       		</p>
 		        		<p align="center"><a class="btn btn-lg btn-success" href="#second" role="button">Start!</a></p>
 			      	</div>
@@ -76,27 +77,46 @@
 
 
 		<div class="ms-section" id="left2">
-			<h1>Left 2 </h1>
+			<h1>Konzertfotografie</h1>
 		</div>
 
 		<div class="ms-section" id="left3">
-			<h1>Left 3</h1>
+			<h1>Natur/Landschaft</h1>
 		</div>
+	
+		<div class="ms-section" id="left4">
+			<h1>Abstrakt</h1>
+		</div>
+
+			<div class="ms-section" id="left5">
+			<h1>Portrait</h1>
+		</div>
+
+
 	</div>
+
 	
 	<div class="ms-right">
 		<div class="ms-section" id="right1">
 		
 		</div>
-
-		<div class="ms-section" id="right2">
+ 
+		<div class="ms-section section2" id="right2">
 			
 			
 		</div>
 
-		<div class="ms-section" id="right3">
+		<div class="ms-section section3" id="right3">
 			
 		</div>
+		<div class="ms-section section4" id="right4">
+			
+		</div>
+
+		<div class="ms-section section5" id="right5">
+			
+		</div>
+
 	</div>	
 </div>
 
