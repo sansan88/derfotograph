@@ -17,21 +17,29 @@
  one rather than "linear" or "swing". You can also add the full jQuery UI instead of this file if you prefer -->
   <script src="js/jquery.easings.min.js" type="text/javascript" ></script>   
   <script src="js/jquery.multiscroll.min.js" type="text/javascript" ></script>
-  
 
-	<script type="text/javascript">
+  <script src="js/jquery.colorbox-min.js" type="text/javascript"></script>
+  
+  <script type="text/javascript">
 	 $(document).ready(function() {
             $('#myContainer').multiscroll({
-            	sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
-            	anchors: ['first', 'second', 'third', 'fourth', 'fifth'],
+            	sectionsColor: ['#333', '#000', '#FFF', '#000', '#FFF'],
+            	anchors: ['start', 'musik', 'stadt', 'natur', 'abstrakt', 'portrait'],
             	menu: '#menu',
             	navigation: true,
-            	navigationTooltips: ['Start', 'Musik', 'Natur', 'Abstrakt', 'Portrait'],
+            	navigationTooltips: ['Start', 'Musik', 'Stadt','Natur', 'Abstrakt', 'Portrait'],
             	loopBottom: false,
-            	loopTop: false
+            	loopTop: false,
+            	verticalCentered : true,
+            	paddingTop: '60px',
+            	paddingBottom: '0px'
             });
         });
     </script>
+
+    
+
+
 </head>
 <body data-spy="scroll" data-target=".navbar">
 <ul id="menu">
@@ -44,15 +52,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#first">derfotograph.ch</a>
+          <a class="navbar-brand" href="#start">derfotograph.ch</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <!--<li data-menuanchor="first" class="active"> <a href="#first">Section 1</a></li>-->
-            <li data-menuanchor="second">       <a href="#second">Musik</a></li>
-            <li data-menuanchor="third">        <a href="#third">Natur</a></li>
-            <li data-menuanchor="fourth">       <a href="#fourth">Abstrakt</a></li>
-            <li data-menuanchor="fifth">        <a href="#fifth">Portrait</a></li>
+            <li data-menuanchor="musik">       <a href="#musik">Musik</a></li>
+            <li data-menuanchor="stadt">       <a href="#stadt">Stadt</a></li>
+            <li data-menuanchor="natur">       <a href="#natur">Natur</a></li>
+            <li data-menuanchor="abstrakt">    <a href="#abstrakt">Abstrakt</a></li>
+            <li data-menuanchor="portrait">    <a href="#portrait">Portrait</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -61,60 +70,83 @@
 
 <div id="myContainer">
 	<div class="ms-left">
-		<div class="ms-section" id="left1">
+		<div class="ms-section start" 		id="left1">
+		<div class="graduated"></div>
 			<div class="fullscreen">
 				<div class="container">
 			    	<div class="jumbotron" id="startButton">
-			        	<h1>Hallo.</h1>
+			        	<h1>Willkommen auf derfotograph.ch</h1>
 			        	<p class="lead">
-			        		Klicke dich durch mein Portfolie durch..
+			        		Viel Spass beim durchstöbern meines Portfolios!
 			       		</p>
-		        		<p align="center"><a class="btn btn-lg btn-success" href="#second" role="button">Start!</a></p>
+		        		<p align="center"><a class="btn btn-lg btn-success" href="#musik" role="button">Start!</a></p>
 			      	</div>
 			    </div>
 			</div>
 		</div>
 
 
-		<div class="ms-section" id="left2">
-			<h1>Konzertfotografie</h1>
+		<div class="ms-section musik" 		id="left2">
+			<h1>Musik &<br>Konzert.</h1>
 		</div>
 
-		<div class="ms-section" id="left3">
-			<h1>Natur/Landschaft</h1>
+		<div class="ms-section stadt" 		id="left3">
+			<div class="photoset-grid-basic" data-layout="111">
+			  <img src="images/stadt2.jpg" data-highres="images/stadt2.jpg" width="400px" height="267px">
+			  <img src="images/stadt1.jpg" data-highres="images/stadt1.jpg" width="400px" height="267px">
+			  <img src="images/stadt3.jpg" data-highres="images/stadt3.jpg" width="400px" height="267px">
+			  <!--<img src="images/stadt4.jpg" data-highres="images/stadt4.jpg" width="400px" height="267px"> -->
+			</div>
 		</div>
 	
-		<div class="ms-section" id="left4">
-			<h1>Abstrakt</h1>
+		<div class="ms-section natur" id="left4">
+			<h1>Natur &<br>Landschaft.</h1>
 		</div>
-
-			<div class="ms-section" id="left5">
-			<h1>Portrait</h1>
+		
+		<div class="ms-section abstrakt" 	id="left5">
+		<div class="photoset-grid-basic" data-layout="111">
+			<img src="images/abstrakt1.jpg" data-highres="images/abstrakt1.jpg" width="400px" height="267px">
+			</div>
 		</div>
-
+		
+		<div class="ms-section portrait" id="left5">
+			<h1>Portrait.</h1>
+		</div>
 
 	</div>
 
 	
 	<div class="ms-right">
-		<div class="ms-section" id="right1">
-		
+		<div class="ms-section start headerimage" 		id="right1">
+
 		</div>
  
-		<div class="ms-section section2" id="right2">
-			
-			
+		<div class="ms-section musik" 		id="right2">
+			<div class="photoset-grid-basic" data-layout="111">
+			  <img src="images/musik1.jpg" data-highres="images/musik1.jpg" width="400px" height="267px">
+			  <img src="images/musik2.jpg" data-highres="images/musik2.jpg" width="400px" height="267px">
+			  <img src="images/musik3.jpg" data-highres="images/musik3.jpg" width="400px" height="267px">
+			</div>
 		</div>
 
-		<div class="ms-section section3" id="right3">
-			
+		<div class="ms-section stadt" 		id="right3">
+			<h1>Stadt &<br>Architektur.</h1>
 		</div>
-		<div class="ms-section section4" id="right4">
 			
+		<div class="ms-section natur" 		id="right4">
+			<div class="photoset-grid-basic" data-layout="111">
+			  <img src="images/natur2.jpg" data-highres="images/natur2.jpg" width="400px" height="267px">
+			  <img src="images/natur1.jpg" data-highres="images/natur1.jpg" width="400px" height="267px">
+			  <img src="images/natur3.jpg" data-highres="images/natur3.jpg" width="400px" height="267px">
+			</div>
 		</div>
 
-		<div class="ms-section section5" id="right5">
-			
+		<div class="ms-section abstrakt" 	id="right5">
+			<h1>Abstrakt.</h1>
+		</div>
+
+		<div class="ms-section portrait" 	id="right6">
+			<iframe src="//player.vimeo.com/video/102506770?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&amp;loop=1" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 		</div>
 
 	</div>	
